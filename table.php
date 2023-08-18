@@ -351,7 +351,7 @@ if ($con->connect_error) {
                     <button type="button" class="btn rowbtn" title="Poista yhteystieto" style="display:none"><span class="bi bi-trash"></span> Poista</button>
                     <button class="btn emailbtn" title="Lähetä PDF" style="display:none"><span class="bi bi-envelope"></span> Lähetä</button>
                       <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#addmodal"><span class="bi bi-person-plus"></span> Lisää yhteystieto</button>
-                    <button class="btn float-end" onclick="document.location='./logou.php'">Kirjaudu ulos<span class="bi bi-chevron-right"></span></button>
+                    <button class="btn float-end" onclick="document.location='./logout.php'">Kirjaudu ulos<span class="bi bi-chevron-right"></span></button>
                      <button id="mode-button" class="btn float-end move">
                         <i id="mode-icon" class="bi bi-brightness-high"></i>
                         <span id="mode-text"></span>
