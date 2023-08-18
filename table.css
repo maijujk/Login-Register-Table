@@ -1,0 +1,181 @@
+body {
+	margin-top: 60px;
+}
+
+/* Ylös-näppäimen muotoilu */
+#ylös {
+    display: none;
+    position: fixed; 
+    bottom: 20px; 
+    right: 30px; 
+    z-index: 99; 
+    border: none; 
+    outline: none;
+    cursor: pointer; 
+    padding: 5px 10px; 
+    border-radius: 10px; 
+    background-color: var(--btn-bg);
+}
+/* Ylös-näppäimen taustaväri kun hiiri viedään päälle */  
+#ylös:hover {
+    background-color:#6b9a9d; 
+}
+
+ input[type="text"], input[type="email"] {
+  width: 290px;
+}
+
+textarea[type="text"] {
+  width: 290px;
+  height: 100px;
+  resize: none; 
+}
+
+select {
+  padding: 6px 10px;
+  border-radius: 10px;
+}
+
+:root,
+  :root.light {
+    --primary-color: #007bff;
+    --secondary-color: #f8f9fa;
+    --font-color: #212529;
+    --bg-color: #bbbba8;
+    --heading-color: #6c757d;
+    --btn-bg: #c3c3c3;
+    --btn-color: #1d2124;
+    --btn-bg-hover: #0069d9;
+  }
+  
+  :root.dark {
+    --primary-color: #007bff;
+    --secondary-color: #343a40;
+    --font-color: #f8f9fa;
+    --bg-color: #1d2124;
+    --heading-color: #6c757d;
+    --btn-bg: #3a4853;
+    --btn-color: #f8f9fa;
+    --btn-bg-hover: #343a40;
+  }
+  
+  body {
+    background-color: var(--bg-color);
+    color: var(--font-color);
+  }
+  
+  .card {
+    padding: 10px;
+    background-color: var(--secondary-color);
+    color: var(--font-color);
+  }
+  
+  .card button {
+    background-color: var(--btn-bg);
+    color: var(--btn-color);
+    border-color: var(--btn-bg);
+  }
+  
+  .card button:hover {
+    background-color: var(--btn-bg-hover);
+    border-color: var(--btn-bg-hover);
+  }
+  
+  .table {
+    color: var(--font-color);
+  }
+  
+  .modal button {
+    background-color: var(--btn-bg);
+    color: var(--btn-color);
+    border-color: var(--btn-bg);
+  }
+  
+  .modal-header {
+    background-color: var(--secondary-color) !important;
+    color: var(--font-color);
+  }
+  
+  .modal-body {
+    background-color: var(--secondary-color) !important;
+    color: var(--font-color);
+     text-indent: 0em;
+  }
+  
+  .modal-footer {
+    background-color: var(--secondary-color) !important;
+    color: var(--font-color);
+  }
+  
+  .page-item.active .page-link {
+    background-color: var(--btn-bg) !important;
+  }
+  
+  .page-link {
+    color: var(--font-color) !important;
+    background-color: var(--secondary-color) !important;
+    border: none;
+  }
+
+  .card button:hover {
+    background-color: var(--bg-color);
+    cursor: pointer;
+  }
+  
+  .toast-header {
+    background-color: var(--btn-bg);
+    color: var(--font-color);
+    border: 1px solid var(--font-color);
+  }
+  .toast {
+    width: fit-content;
+    max-width: 100%;
+  }
+
+  .btn-close {
+    font-size: 10px;
+    cursor: pointer;
+    /* filter: invert(1); */
+  }
+  
+/* Index page login/register väli */
+.nav-pills>li+li{
+  margin:0px;
+}
+
+  /* Tyyli napille */
+#mode-button {
+  background-color: var(--btn-bg);
+  color: var(--font-color);
+}
+
+#mode-button:hover {
+  background-color: var(--bg-color);
+  cursor: pointer;
+}
+
+button.move {
+  margin-right: 5px; /* tai padding-right: 10px; */
+}
+
+datatableid {
+  border-collapse: collapse; /* poistaa turhat välit solujen väliltä */
+}
+
+i.bi-caret-down-fill {
+  font-size: 0.7em; /* pienentää kuvakkeen kokoa */
+}
+
+/* Pdf muotoilu */
+table {
+  border-collapse: collapse;
+    width: 100%;
+
+}
+th, td {
+  border-bottom: 1px solid; color: var(--btn-color); /* lisää vaakasuorat reunat alas*/
+  border-top: 1px solid; color: var(--btn-color); /* lisää vaakasuorat reunat ylös*/
+  border-left: none; /* poistaa pystysuorat reunat vasen*/
+  border-right: none; /* poistaa pystysuorat reunat oikea*/
+  text-align: left;
+}
