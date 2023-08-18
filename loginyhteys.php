@@ -31,14 +31,14 @@ if ($stmt = $con->prepare('SELECT id, password FROM accounts WHERE username = ?'
             // Jos salasana väärin
             $_SESSION['stat'] = "Salasana väärin!";
             $_SESSION['activeModal'] = "Login";
-            header("Location: login.php");
+            header("Location: index.php");
 
         }
     } else {
         // Jos käyttäjätunnus väärin
         $_SESSION['stat'] = "Käyttäjätunnus väärin!";
         $_SESSION['activeModal'] = "Login";
-        header("Location: login.php");
+        header("Location: index.php");
 
     }
     }

@@ -16,20 +16,20 @@ if (isset($_POST["register"])){
     if (empty($username) || empty($new_password) || empty($confirm_password)) {
         $_SESSION['statu'] = "Täytä kaikki kentät!";
         $_SESSION['activeModal'] = "Register";
-        header("Location: login.php");
+        header("Location: index.php");
     }
 
     if (strlen($new_password) > 20 || strlen($new_password) < 5) {
         $_SESSION['statu'] = "Salasanan on oltava 5-20 merkkiä pitkä!";
         $_SESSION['activeModal'] = "Register";
-        header("Location: login.php");
+        header("Location: index.php");
         exit();
     }
 
     if ($new_password !== $confirm_password) {
         $_SESSION['statu'] = "Salasanat eivät ole samat!";
         $_SESSION['activeModal'] = "Register";
-        header("Location: login.php");
+        header("Location: index.php");
         exit();
     }
 
@@ -42,7 +42,7 @@ if (isset($_POST["register"])){
     if ($stmt->num_rows > 0) {
         $_SESSION['statu'] = "Käyttäjänimi on jo käytössä!";
         $_SESSION['activeModal'] = "Register";
-        header("Location: login.php");
+        header("Location: index.php");
         exit();
     }
 
@@ -57,7 +57,7 @@ if (isset($_POST["register"])){
     $stmt->execute();
     $_SESSION['statu'] = "Käyttäjä rekisteröitiin onnistuneesti!";
     $_SESSION['activeModal'] = "Register";
-    header("Location: login.php");
+    header("Location: index.php");
     exit();
 }
 

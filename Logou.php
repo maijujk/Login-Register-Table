@@ -2,5 +2,5 @@
 session_start();
 session_destroy();
 // Uloskirjautuessa ohjataan etusivulle
-header('Location: ./login.php');
+header('Location: ./index.php');
 ?>
